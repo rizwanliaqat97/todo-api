@@ -5,7 +5,7 @@ module.exports =
             const { user } = params;
             const { title } = data;
             if (!title) {
-                throw new Error("Title is required);
+                throw new Error("Title is required");
             }
             const populated = { ...data, userId: user._id };
             context.data = populated;
