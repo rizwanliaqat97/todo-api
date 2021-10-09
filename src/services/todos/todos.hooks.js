@@ -1,5 +1,5 @@
 const { authenticate } = require('@feathersjs/authentication').hooks;
-import { addUserId } from '../../hooks/userId.hook';
+const addUserId = require('../../hooks/userId.hook');
 
 module.exports = {
     before: {
