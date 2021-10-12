@@ -7,6 +7,6 @@ module.exports =
       throw new Error("Permission denied");
     }
     const populated = { ...query, userId: user._id };
-    context.query = populated;
+    context.params.query = populated;
     return context;
   };
